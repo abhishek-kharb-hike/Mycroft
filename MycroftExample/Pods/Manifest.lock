@@ -1,0 +1,16 @@
+PODS:
+  - MycroftSource (0.1.0)
+
+DEPENDENCIES:
+  - MycroftSource (from `../`)
+
+EXTERNAL SOURCES:
+  MycroftSource:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MycroftSource: 1cd69a2dab7ca7677a237be9018d92f769e41cbe
+
+PODFILE CHECKSUM: e7a394ea2b09eef5c8e62bb489cdb59a8e4fcea3
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,21 @@
+{
+  "name": "MycroftSource",
+  "version": "0.1.0",
+  "summary": "A short description of MycroftSource.",
+  "homepage": "https://github.com/abhishek-kharb-hike/Mycroft",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "abhishek-kharb-hike": "abhishekkh@hike.in"
+  },
+  "source": {
+    "git": "https://github.com/abhishek-kharb-hike/Mycroft.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "MycroftSource/Classes/**/*.{h,m}"
+}
