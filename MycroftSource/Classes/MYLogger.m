@@ -10,4 +10,7 @@
 
 @implementation MYLogger
 
++ (void)startLoggingWithInfo:(id<MYLoggingInfo>)loggingInfo {
+    
+}
 @end

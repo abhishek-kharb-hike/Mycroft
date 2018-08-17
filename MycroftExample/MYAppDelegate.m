@@ -7,12 +7,40 @@
 //
 
 #import "MYAppDelegate.h"
+#import <mach/mach.h>
+
+@interface MYAppDelegate()
+@end
 
 @implementation MYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [NSTimer scheduledTimerWithTimeInterval:1
+                                         target:self
+                                       selector:@selector(refreshMessageTimestamp)
+                                       userInfo:nil
+                                        repeats:YES];
+
+    });
     return YES;
+}
+
+- (void)refreshMessageTimestamp {
+    report_memory();
+}
+
+void report_memory(void) {
+    struct task_basic_info info;
+    mach_msg_type_number_t size = TASK_BASIC_INFO_COUNT;//sizeof(info);
+    kern_return_t kerr = task_info(mach_task_self(), TASK_BASIC_INFO, (task_info_t)&info, &size);
+    if(kerr == KERN_SUCCESS) {
+        NSLog(@"Memory in use (in MB): %f", ((CGFloat)info.resident_size / (1024*1024)));
+    } else {
+        NSLog(@"Error with task_info(): %s", mach_error_string(kerr));
+    }
 }
 
 

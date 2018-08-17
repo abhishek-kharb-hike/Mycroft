@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MYLoggingInfo.h"
 
 @interface MYLogger : NSObject
+
++ (void)startLoggingWithInfo:(id<MYLoggingInfo>)loggingInfo;
 
 @end
