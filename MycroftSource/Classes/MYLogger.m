@@ -11,6 +11,17 @@
 @implementation MYLogger
 
 + (void)startLoggingWithInfo:(id<MYLoggingInfo>)loggingInfo {
-    
+    switch (loggingInfo.loggingType) {
+        case MYLoggingTypeMemoryUsage:
+            break;
+        case MYLoggingTypeCPUUsage:
+            break;
+        case MYLoggingTypeBatteryUsage:
+            break;
+        default:
+            break;
+    }
 }
+
+
 @end

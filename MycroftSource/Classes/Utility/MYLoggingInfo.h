@@ -9,7 +9,17 @@
 #ifndef MYLoggingInfo_h
 #define MYLoggingInfo_h
 
+typedef NS_ENUM(NSInteger, MYLoggingType) {
+    MYLoggingTypeMemoryUsage = 0,
+    MYLoggingTypeCPUUsage,
+    MYLoggingTypeBatteryUsage,
+};
+
 @protocol MYLoggingInfo <NSObject>
+@property (nonatomic) MYLoggingType loggingType;
+@property (nonatomic) NSInteger samplingRate;
+@property (nonatomic) NSTimeInterval duration;
+
 @end
 
 #endif /* MYLoggingInfo_h */
