@@ -3,15 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		225B1831AD1F0D9E11461DCD5E500768 /* MYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = C9520532D85B07C405EF975062AC17F9 /* MYLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6F0412EE37EF9B519C8AEB8547A6958E /* MYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 686B6607263C291135144F3D0AF93C0E /* MYLogger.m */; };
-		9AA077B4CCC72E555E7F290C0F9FDDE5 /* MycroftSource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B15851760062A8DD409D8A49BE3126F /* MycroftSource-dummy.m */; };
+		1322A444C471826A8B2EF5A884DA5269 /* MYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F3131FC342DB7F39218E997300AC0A /* MYLogger.m */; };
+		3F1CF683CAEC21D010925A5C866A53DE /* MYLoggingInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B7C65FB5E6C85FF535473F2EFF0A78E0 /* MYLoggingInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A4EE903A35410BAD19F18B154A32E5D4 /* Pods-Mycroft-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE60CD0060A0D68DE05716BB0F4F1FD /* Pods-Mycroft-dummy.m */; };
-		CC3D8414AEC37036D30DC2592CE6BD34 /* MYLoggingInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E0917ACF9CCF1BC989BCE71F46F6896 /* MYLoggingInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C404F9F04B37B165BB2A828CF8E45942 /* MYMemoryLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 76701320C90E1DCDD349B4125E83EA88 /* MYMemoryLogger.m */; };
+		E01260AD0B4E94FF0AEFE9567DD75E42 /* MycroftSource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8D17771CDEABC6C25531698CFBA495 /* MycroftSource-dummy.m */; };
+		E1BDF631F048093D8D1F52EFF9234BF8 /* MYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA86525ED60AB0A1B81FDFA055A74AD /* MYLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FF1DC018461F71330DBB51D56BD29A70 /* MYMemoryLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = AC87B5653112D79752731BD5622FB9BE /* MYMemoryLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -19,28 +21,30 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BDB9DD261C2C843E5E5A4D95861BB50F;
+			remoteGlobalIDString = 9768CF58E38FC02704F7A20E23D90F44;
 			remoteInfo = MycroftSource;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3B15851760062A8DD409D8A49BE3126F /* MycroftSource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MycroftSource-dummy.m"; sourceTree = "<group>"; };
+		06763CF6C5559A5380BB1187108373B7 /* MycroftSource.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MycroftSource.xcconfig; sourceTree = "<group>"; };
+		140FEFF5FBC0D9A01417263C191A1E82 /* MycroftSource.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MycroftSource.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4825C220F54015D8B9F1DEE99F363796 /* Pods-Mycroft-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Mycroft-acknowledgements.plist"; sourceTree = "<group>"; };
-		58B2CC10B34E4156EF2615725FDB794B /* MycroftSource.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MycroftSource.xcconfig; sourceTree = "<group>"; };
-		686B6607263C291135144F3D0AF93C0E /* MYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MYLogger.m; sourceTree = "<group>"; };
-		7DE664CAB07FB491FE955A177D729D3A /* MycroftSource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MycroftSource-prefix.pch"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		76701320C90E1DCDD349B4125E83EA88 /* MYMemoryLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MYMemoryLogger.m; path = MycroftSource/Classes/MYMemoryLogger.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94ACF5AB242ED0EB96D51389692CFD26 /* Pods-Mycroft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mycroft.debug.xcconfig"; sourceTree = "<group>"; };
 		9BE60CD0060A0D68DE05716BB0F4F1FD /* Pods-Mycroft-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Mycroft-dummy.m"; sourceTree = "<group>"; };
-		9E0917ACF9CCF1BC989BCE71F46F6896 /* MYLoggingInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MYLoggingInfo.h; sourceTree = "<group>"; };
-		A10CDB06B8ED1171D34C4B8A25FE4772 /* libMycroftSource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMycroftSource.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10CDB06B8ED1171D34C4B8A25FE4772 /* libMycroftSource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMycroftSource.a; path = libMycroftSource.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC87B5653112D79752731BD5622FB9BE /* MYMemoryLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MYMemoryLogger.h; path = MycroftSource/Classes/MYMemoryLogger.h; sourceTree = "<group>"; };
 		B6069B03FE6500038E27BACABB524FDE /* Pods-Mycroft-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Mycroft-frameworks.sh"; sourceTree = "<group>"; };
 		B6D2CC36DFEBE8E43804EA9AFAB90FF5 /* Pods-Mycroft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mycroft.release.xcconfig"; sourceTree = "<group>"; };
-		BB99B4BF60CEFD8C9D7AB95D274AC721 /* MycroftSource.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = MycroftSource.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C9520532D85B07C405EF975062AC17F9 /* MYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MYLogger.h; sourceTree = "<group>"; };
-		E1B8081DFA73232C69FBEA6D31915FD1 /* libPods-Mycroft.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mycroft.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C65FB5E6C85FF535473F2EFF0A78E0 /* MYLoggingInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MYLoggingInfo.h; path = MycroftSource/Classes/MYLoggingInfo.h; sourceTree = "<group>"; };
+		B9F3131FC342DB7F39218E997300AC0A /* MYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MYLogger.m; path = MycroftSource/Classes/MYLogger.m; sourceTree = "<group>"; };
+		BC8D17771CDEABC6C25531698CFBA495 /* MycroftSource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MycroftSource-dummy.m"; sourceTree = "<group>"; };
+		E1B8081DFA73232C69FBEA6D31915FD1 /* libPods-Mycroft.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Mycroft.a"; path = "libPods-Mycroft.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F93D2E55D352FB43A366099F0A1016 /* Pods-Mycroft-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Mycroft-resources.sh"; sourceTree = "<group>"; };
+		EBA86525ED60AB0A1B81FDFA055A74AD /* MYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MYLogger.h; path = MycroftSource/Classes/MYLogger.h; sourceTree = "<group>"; };
+		EFDAFFF9F09BF5405725E16C0C521521 /* MycroftSource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MycroftSource-prefix.pch"; sourceTree = "<group>"; };
 		F45ED78F4CD4DD0D5D01D4244642DAE6 /* Pods-Mycroft-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Mycroft-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,7 +56,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B197CC8508D83C9D20A0D1078378179 /* Frameworks */ = {
+		D8315E41E2AF74257EED55CA7EAB8BD0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,24 +71,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1BEE439D8BF0736E3A85586FE2B9BC64 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				BB99B4BF60CEFD8C9D7AB95D274AC721 /* MycroftSource.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		344CBA6A2126B8D2005D1C85 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C9520532D85B07C405EF975062AC17F9 /* MYLogger.h */,
-				686B6607263C291135144F3D0AF93C0E /* MYLogger.m */,
-				9E0917ACF9CCF1BC989BCE71F46F6896 /* MYLoggingInfo.h */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		56EA6D340B4BE3A4286E43475F056D2F /* Products */ = {
@@ -111,26 +97,31 @@
 			path = "Target Support Files/Pods-Mycroft";
 			sourceTree = "<group>";
 		};
-		7A76CA666FC219DE61B6B392177FFA52 /* Support Files */ = {
+		69FA9923C569982CBAA51BE91B92886D /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				58B2CC10B34E4156EF2615725FDB794B /* MycroftSource.xcconfig */,
-				3B15851760062A8DD409D8A49BE3126F /* MycroftSource-dummy.m */,
-				7DE664CAB07FB491FE955A177D729D3A /* MycroftSource-prefix.pch */,
+				140FEFF5FBC0D9A01417263C191A1E82 /* MycroftSource.podspec */,
 			);
-			name = "Support Files";
-			path = "MycroftExample/Pods/Target Support Files/MycroftSource";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				FDEE4D0C3F75ECE47653F02BC1E50FA7 /* Development Pods */,
+				A356AD68A8C355F61BAF7CB853F4D425 /* Development Pods */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
 				56EA6D340B4BE3A4286E43475F056D2F /* Products */,
 				DBFD6489E41DF8317A76205BA3C2DC7F /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		A356AD68A8C355F61BAF7CB853F4D425 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E36ED3C17EB4A36B795F737308A88D69 /* MycroftSource */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		DBFD6489E41DF8317A76205BA3C2DC7F /* Targets Support Files */ = {
@@ -141,40 +132,65 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F4D2F3EB2F4FA57D59B549A7019DFE04 /* MycroftSource */ = {
+		E36ED3C17EB4A36B795F737308A88D69 /* MycroftSource */ = {
 			isa = PBXGroup;
 			children = (
-				344CBA6A2126B8D2005D1C85 /* Classes */,
-				1BEE439D8BF0736E3A85586FE2B9BC64 /* Pod */,
-				7A76CA666FC219DE61B6B392177FFA52 /* Support Files */,
+				EBA86525ED60AB0A1B81FDFA055A74AD /* MYLogger.h */,
+				B9F3131FC342DB7F39218E997300AC0A /* MYLogger.m */,
+				B7C65FB5E6C85FF535473F2EFF0A78E0 /* MYLoggingInfo.h */,
+				AC87B5653112D79752731BD5622FB9BE /* MYMemoryLogger.h */,
+				76701320C90E1DCDD349B4125E83EA88 /* MYMemoryLogger.m */,
+				69FA9923C569982CBAA51BE91B92886D /* Pod */,
+				EAA09D19503A49B3A1E2B2053FBA864F /* Support Files */,
 			);
 			name = MycroftSource;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		FDEE4D0C3F75ECE47653F02BC1E50FA7 /* Development Pods */ = {
+		EAA09D19503A49B3A1E2B2053FBA864F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F4D2F3EB2F4FA57D59B549A7019DFE04 /* MycroftSource */,
+				06763CF6C5559A5380BB1187108373B7 /* MycroftSource.xcconfig */,
+				BC8D17771CDEABC6C25531698CFBA495 /* MycroftSource-dummy.m */,
+				EFDAFFF9F09BF5405725E16C0C521521 /* MycroftSource-prefix.pch */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "MycroftExample/Pods/Target Support Files/MycroftSource";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A4882ADDA6022C92726B2690132357C0 /* Headers */ = {
+		AC7C3D38D9A4850640A0BBED920BABA7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				225B1831AD1F0D9E11461DCD5E500768 /* MYLogger.h in Headers */,
-				CC3D8414AEC37036D30DC2592CE6BD34 /* MYLoggingInfo.h in Headers */,
+				E1BDF631F048093D8D1F52EFF9234BF8 /* MYLogger.h in Headers */,
+				3F1CF683CAEC21D010925A5C866A53DE /* MYLoggingInfo.h in Headers */,
+				FF1DC018461F71330DBB51D56BD29A70 /* MYMemoryLogger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		9768CF58E38FC02704F7A20E23D90F44 /* MycroftSource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6680990727E19BD42F0F980994628DD /* Build configuration list for PBXNativeTarget "MycroftSource" */;
+			buildPhases = (
+				19D88BD983F75EE2F933F0146D59C3D4 /* Sources */,
+				D8315E41E2AF74257EED55CA7EAB8BD0 /* Frameworks */,
+				AC7C3D38D9A4850640A0BBED920BABA7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MycroftSource;
+			productName = MycroftSource;
+			productReference = A10CDB06B8ED1171D34C4B8A25FE4772 /* libMycroftSource.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		9BF34FB94D0EBC46D97251635C368EBC /* Pods-Mycroft */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF966D1F83723C0E4E79E884B9AC6949 /* Build configuration list for PBXNativeTarget "Pods-Mycroft" */;
@@ -190,23 +206,6 @@
 			name = "Pods-Mycroft";
 			productName = "Pods-Mycroft";
 			productReference = E1B8081DFA73232C69FBEA6D31915FD1 /* libPods-Mycroft.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		BDB9DD261C2C843E5E5A4D95861BB50F /* MycroftSource */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F0C6435147FAD9BFFFE6DF62AD0E123A /* Build configuration list for PBXNativeTarget "MycroftSource" */;
-			buildPhases = (
-				5FBBBFA6B2E6E04370403123DBBAE45C /* Sources */,
-				5B197CC8508D83C9D20A0D1078378179 /* Frameworks */,
-				A4882ADDA6022C92726B2690132357C0 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MycroftSource;
-			productName = MycroftSource;
-			productReference = A10CDB06B8ED1171D34C4B8A25FE4772 /* libMycroftSource.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -230,19 +229,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BDB9DD261C2C843E5E5A4D95861BB50F /* MycroftSource */,
+				9768CF58E38FC02704F7A20E23D90F44 /* MycroftSource */,
 				9BF34FB94D0EBC46D97251635C368EBC /* Pods-Mycroft */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5FBBBFA6B2E6E04370403123DBBAE45C /* Sources */ = {
+		19D88BD983F75EE2F933F0146D59C3D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AA077B4CCC72E555E7F290C0F9FDDE5 /* MycroftSource-dummy.m in Sources */,
-				6F0412EE37EF9B519C8AEB8547A6958E /* MYLogger.m in Sources */,
+				E01260AD0B4E94FF0AEFE9567DD75E42 /* MycroftSource-dummy.m in Sources */,
+				1322A444C471826A8B2EF5A884DA5269 /* MYLogger.m in Sources */,
+				C404F9F04B37B165BB2A828CF8E45942 /* MYMemoryLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +260,7 @@
 		8915ED8E833DD0B92F8A94059B20D176 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MycroftSource;
-			target = BDB9DD261C2C843E5E5A4D95861BB50F /* MycroftSource */;
+			target = 9768CF58E38FC02704F7A20E23D90F44 /* MycroftSource */;
 			targetProxy = 396E40305679BA2E8ECEACE1B0313DBE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -329,30 +329,6 @@
 			};
 			name = Debug;
 		};
-		2C8E0E4C422547D61F8E2824E7CAC765 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58B2CC10B34E4156EF2615725FDB794B /* MycroftSource.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/MycroftSource/MycroftSource-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = MycroftSource;
-				PRODUCT_NAME = MycroftSource;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		7786F6F875AF579D170F6755E3ABD522 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 94ACF5AB242ED0EB96D51389692CFD26 /* Pods-Mycroft.debug.xcconfig */;
@@ -374,9 +350,33 @@
 			};
 			name = Debug;
 		};
-		9E044A866ADA93DB44A6BC98C38C6E29 /* Debug */ = {
+		9C058D90CDC2141C111E8CCB0F008DD7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58B2CC10B34E4156EF2615725FDB794B /* MycroftSource.xcconfig */;
+			baseConfigurationReference = 06763CF6C5559A5380BB1187108373B7 /* MycroftSource.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MycroftSource/MycroftSource-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MycroftSource;
+				PRODUCT_NAME = MycroftSource;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8308288117C5181BC94BC0E03D4718D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06763CF6C5559A5380BB1187108373B7 /* MycroftSource.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -498,11 +498,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0C6435147FAD9BFFFE6DF62AD0E123A /* Build configuration list for PBXNativeTarget "MycroftSource" */ = {
+		D6680990727E19BD42F0F980994628DD /* Build configuration list for PBXNativeTarget "MycroftSource" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E044A866ADA93DB44A6BC98C38C6E29 /* Debug */,
-				2C8E0E4C422547D61F8E2824E7CAC765 /* Release */,
+				C8308288117C5181BC94BC0E03D4718D /* Debug */,
+				9C058D90CDC2141C111E8CCB0F008DD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

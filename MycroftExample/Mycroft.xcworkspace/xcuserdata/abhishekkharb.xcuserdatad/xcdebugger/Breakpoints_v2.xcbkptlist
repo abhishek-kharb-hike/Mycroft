@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MYAppDelegate.m"
-            timestampString = "556108362.147265"
+            filePath = "../MycroftSource/Classes/MYMemoryLogger.m"
+            timestampString = "556196449.644856"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "-refreshMessageTimestamp"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "+logMemeryStatus:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,76 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MYAppDelegate.m"
-            timestampString = "556108362.147964"
+            filePath = "../MycroftSource/Classes/MYMemoryLogger.m"
+            timestampString = "556196449.645198"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "+startMemoryLoggingWithInfo:dispatchQueue:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[MYMemoryLogger startMemoryLoggingWithInfo:dispatchQueue:]"
+                  moduleName = "Mycroft"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishekkharb/Desktop/Developer/Mycroft/MycroftSource/Classes/MYMemoryLogger.m"
+                  timestampString = "556196449.8062119"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__59+[MYMemoryLogger startMemoryLoggingWithInfo:dispatchQueue:]_block_invoke"
+                  moduleName = "Mycroft"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishekkharb/Desktop/Developer/Mycroft/MycroftSource/Classes/MYMemoryLogger.m"
+                  timestampString = "556196449.808298"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_"
+                  moduleName = "Mycroft"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishekkharb/Desktop/Developer/Mycroft/MycroftSource/Classes/MYMemoryLogger.m"
+                  timestampString = "556196449.810376"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../MycroftSource/Classes/MYMemoryLogger.m"
+            timestampString = "556196449.6454279"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "+startMemoryLoggingWithInfo:dispatchQueue:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

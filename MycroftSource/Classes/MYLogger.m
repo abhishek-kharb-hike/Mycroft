@@ -7,12 +7,25 @@
 //
 
 #import "MYLogger.h"
+#import "MYMemoryLogger.h"
 
 @implementation MYLogger
 
+#pragma mark - Utility Methods
++ (dispatch_queue_t)loggerQueue {
+    static dispatch_queue_t _loggerQueue;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _loggerQueue = dispatch_queue_create("com.mycroft.logger.queue", DISPATCH_QUEUE_SERIAL);
+    });
+    return _loggerQueue;
+}
+
+#pragma mark - Action Methods
 + (void)startLoggingWithInfo:(id<MYLoggingInfo>)loggingInfo {
     switch (loggingInfo.loggingType) {
         case MYLoggingTypeMemoryUsage:
+            [MYMemoryLogger startMemoryLoggingWithInfo:loggingInfo dispatchQueue:[MYLogger loggerQueue]];
             break;
         case MYLoggingTypeCPUUsage:
             break;

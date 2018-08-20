@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BDB9DD261C2C843E5E5A4D95861BB50F"
+               BlueprintIdentifier = "9768CF58E38FC02704F7A20E23D90F44"
                BlueprintName = "MycroftSource"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libMycroftSource.a">

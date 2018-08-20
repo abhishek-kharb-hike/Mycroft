@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, MYLoggingType) {
 
 @protocol MYLoggingInfo <NSObject>
 @property (nonatomic) MYLoggingType loggingType;
-@property (nonatomic) NSInteger samplingRate;
+@property (nonatomic) NSTimeInterval samplingRate;
 @property (nonatomic) NSTimeInterval duration;
 
 @end
