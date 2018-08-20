@@ -9,33 +9,45 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <mach/mach.h>
 
+@interface MYMemoryLogger()
+@property (nonatomic) dispatch_source_t myTimer;
+@property (nonatomic) NSMutableArray *collectedData;
+@end
+
 @implementation MYMemoryLogger
 
-+ (void)startMemoryLoggingWithInfo:(id <MYLoggingInfo>)info dispatchQueue:(dispatch_queue_t)dispatchQueue {
+- (void)startMemoryLoggingWithInfo:(id <MYLoggingInfo>)info dispatchQueue:(dispatch_queue_t)dispatchQueue {
     NSTimeInterval timePeriod = info.duration;
     NSTimeInterval interval = info.samplingRate;
-    dispatch_async(dispatchQueue, ^{
-        //Start logging here.
-        NSMutableArray *values = [NSMutableArray new];
-        [NSTimer scheduledTimerWithTimeInterval:interval target:self selector:@selector(logMemeryStatus:) userInfo:values repeats:YES];
+
+    __weak typeof(self) weakSelf = self;
+    self.myTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatchQueue);
+    self.collectedData = [[NSMutableArray alloc] init];
+    if (self.myTimer)
+    {
+        dispatch_source_set_timer(self.myTimer, dispatch_time(DISPATCH_TIME_NOW, 1), interval * 0.0000000001 , 100);
+        dispatch_source_set_event_handler(self.myTimer, ^{
+            [weakSelf logMemeryStatus];
+        });
+        dispatch_resume(self.myTimer);
+    }
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(timePeriod * NSEC_PER_SEC)), dispatchQueue, ^{
+        dispatch_source_cancel(weakSelf.myTimer);
+        weakSelf.myTimer = nil;
     });
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(timePeriod * NSEC_PER_SEC)),dispatchQueue, ^{
-        //Stop logging here.
-    });
+    
 }
 
-+ (void)logMemeryStatus:(NSTimer *)timer {
-    NSMutableArray *values = timer.userInfo;
+- (void)logMemeryStatus {
     struct task_basic_info info;
-    mach_msg_type_number_t size = sizeof(TASK_BASIC_INFO_COUNT);
-    kern_return_t kerr = task_info(mach_task_self(), TASK_BASIC_INFO, (task_info_t)&info, &size);
-    if(kerr == KERN_SUCCESS) {
-        CGFloat memUsage = (CGFloat)info.resident_size / 1000000);
-        NSLog(@"Memory in use (in MB): %f", memUsage;
-            
-        
+    mach_msg_type_number_t size = TASK_BASIC_INFO_COUNT;
+    kern_return_t kernelStatus = task_info(mach_task_self(), TASK_BASIC_INFO, (task_info_t)&info, &size);
+    if(kernelStatus == KERN_SUCCESS) {
+        CGFloat memUsage = (CGFloat)info.resident_size / (1024 * 1024);
+        [self.collectedData addObject:@(memUsage)];
     } else {
-        NSLog(@"Error with task_info(): %s", mach_error_string(kerr));
+        //ToDo: Log error string "mach_error_string(kernelStatus)"
     }
 }
 

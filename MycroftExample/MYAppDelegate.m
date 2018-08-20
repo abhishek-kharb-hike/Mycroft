@@ -10,6 +10,7 @@
 #import "MYLogger.h"
 
 @interface MYAppDelegate() <MYLoggingInfo>
+@property (nonatomic) MYLogger *customLogger;
 @end
 
 @implementation MYAppDelegate
@@ -22,12 +23,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.duration = 100;
+    self.duration = 10;
     self.loggingType = MYLoggingTypeMemoryUsage;
-    self.samplingRate = 1;
+    self.samplingRate = 2;
     
+    self.customLogger = [[MYLogger alloc] init];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [MYLogger startLoggingWithInfo:self];
+        [self.customLogger startLoggingWithInfo:self];
     });
 
     return YES;

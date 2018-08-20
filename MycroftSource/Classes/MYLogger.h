@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param  loggingInfo All information about the logging, including logginng type, sampling, duration etc.
  
  */
-+ (void)startLoggingWithInfo:(id<MYLoggingInfo>)loggingInfo;
+- (void)startLoggingWithInfo:(id<MYLoggingInfo>)loggingInfo;
 
 @end
 NS_ASSUME_NONNULL_END

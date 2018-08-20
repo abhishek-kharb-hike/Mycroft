@@ -9,5 +9,5 @@
 #import "MYLoggingInfo.h"
 
 @interface MYMemoryLogger : NSObject
-+ (void)startMemoryLoggingWithInfo:(id <MYLoggingInfo>)info dispatchQueue:(dispatch_queue_t)dispatchQueue;
+- (void)startMemoryLoggingWithInfo:(id <MYLoggingInfo>)info dispatchQueue:(dispatch_queue_t)dispatchQueue;
 @end
